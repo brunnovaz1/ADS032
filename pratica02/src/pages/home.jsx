@@ -1,9 +1,9 @@
 import { useContext } from "react"
-import ContatosContext from "../contexts/ContatosContext"
-import { useContext } from "react"
+import {ContatosContext} from "../contexts/ContatosContext.jsx"
+
+
 export default function Home(){
-    
-    const meusContatos = useContext(ContatosContext)
+    const {meusContatos} = useContext(ContatosContext)
     
     return(
         <>
