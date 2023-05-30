@@ -7,10 +7,11 @@ export default function Home(){
     
     return(
         <>
-            <h2>Meus Contatos</h2>
-            <ul>
-                {meusContatos.map((contato, key) => <li id={key}>{contato.nome} - {contato.telefone}</li>)}
-            </ul>
+     <h2>Meus Contatos</h2>  
+         <ul>
+                {meusContatos.map((contato, index) =>
+                <li id={index}>{contato.nome} - {contato.telefone}</li>)}
+        </ul>
 
         </>
     )

@@ -11,7 +11,8 @@ function ContatosContextProvider(props){
   const [contatos, setContatos] = useState([]);
  
   function incluir(contato) {
-    setContatos([...contatos, contato]); /* copia o array e acresceta um valor */}
+    setContatos([...contatos, contato]); /* copia o array e acresceta um valor */
+  }
 
   const contexto = {
     meusContatos: contatos,
